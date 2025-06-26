@@ -1,0 +1,95 @@
+
+.background4{
+    width: 100%;
+    height: 730px;
+    position: relative;
+    background-image: url(./assets/img/airplane8.jpg);
+    
+   
+}
+form{
+    height: 700px;
+    width: 450px;
+    background-color: rgba(6, 94, 171, 0.418);
+    
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 45%;
+    left: 50%;
+    border-radius: 32px;
+    border-style:solid;
+    border-width: 8px;
+    backdrop-filter: blur(10px);
+    border: 4px ;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    padding: 50px 35px;
+    border-width: 11px; /* Change the border width */
+    border-color: black; 
+
+}
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: black;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+form a{
+    text-decoration: none;
+}
+form .ne{
+    padding-top: 10px;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+  
+input {
+    display: block;
+    height: 40px;
+    width: 100%;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+    border-style: solid;
+    border-radius: 0; /* Remove border-radius */
+    background-color: black;
+}
+
+::placeholder{
+    color:black;
+
+   
+}
+form button{
+    margin-top: 30px;
+    width: 100%;
+    background-color:black;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Add a smooth transition for the color change */
+}
+
+form button:hover {
+    background-color:rgb(21, 75, 123); /* Change the background color to #080710 on hover */
+    color: #ffffff; /* Change the text color to #ffffff on hover */
+}

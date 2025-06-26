@@ -1,0 +1,9 @@
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\env\Scripts\activate
+python .\manage.py runserver
+ 
+ 
+python manage.py createsuperuser
+Username (leave blank to use 'maryambano'): rum
+Email address: rum@gmail.com
+password:12345

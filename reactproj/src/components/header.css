@@ -1,0 +1,102 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: url('../pages/assets/img/galaxy.jpg');
+  padding: 0 80px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 1.2rem; /* Reduced font size */
+  font-family: 'Alice', Helvetica, sans-serif;
+  font-weight: 600;
+  color: white;
+  position: relative;
+  transition: font-size 0.3s ease-in-out; /* Smooth transition for font size */
+}
+
+#navbar li a::before,
+#navbar li a::after {
+  content: '';
+  position: absolute;
+  width: calc(100% + 4px); /* Reduced size */
+  height: calc(100% + 4px); /* Reduced size */
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease-in-out;
+}
+
+#navbar li a::before {
+  top: -2px;
+  left: -2px;
+}
+
+#navbar li a::after {
+  bottom: -2px;
+  right: -2px;
+}
+
+#navbar li a:hover {
+  color: rgb(27, 211, 195); /* Change text color on hover */
+  font-size: 1.3rem; /* Increase font size on hover */
+}
+
+#navbar li a:hover::before,
+#navbar li a:hover::after {
+  border-color: rgb(163, 236, 79); /* Change border color on hover */
+}
+
+#mobile {
+  display: none;
+}
+
+#mobile i {
+  color: #fff;
+  align-items: center;
+}
+
+@media screen and (max-width: 1020px) {
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 84px;
+    right: -300px;
+    height: 100vh;
+    background-color: #2a3239;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 40px 0 0 40px;
+  }
+
+  #navbar.active {
+    right: 0px;
+  }
+
+  #navbar li {
+    margin-bottom: 25px;
+  }
+
+  #mobile {
+    display: block;
+  }
+
+  #mobile i {
+    font-size: 36px;
+    cursor: pointer;
+  }
+} 
